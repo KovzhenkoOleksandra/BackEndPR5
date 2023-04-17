@@ -9,13 +9,14 @@ session_start();
 // 2. use
 
 // 3. require_once
-//require_once 'vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 require_once 'Controllers/HomeController.php';
 require_once 'Controllers/RegisterController.php';
 require_once 'Controllers/LoginController.php';
 require_once 'Controllers/AdminController.php';
 require_once 'Controllers/LogoutController.php';
+require_once 'Controllers/GuestbookController.php';
 
 // TODO 2: ROUTING
 
@@ -34,6 +35,9 @@ switch ($_SERVER['REQUEST_URI']) {
         break;
     case '/admin':
         $controllerClassName = 'AdminController';
+        break;
+    case '/guestbook':
+        $controllerClassName = 'GuestbookController';
         break;
     default:
         echo 'Path not found.';

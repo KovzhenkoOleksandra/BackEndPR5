@@ -1,0 +1,17 @@
+{
+    "name": "38099/pr5",
+    "autoload": {
+        "psr-4": {
+            "38099\\Pr5\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oleksandra Kovzhenko",
+            "email": "o.i.kovzhenko@student.khai.edu"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^6.2"
+    }
+}
